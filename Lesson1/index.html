@@ -1,136 +1,51 @@
 <!DOCTYPE html>
-<!-- HTML version 5 -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <script>
-      tailwind.config = {
-        theme: {
-          colors: {
-            blue: "#1fb6ff",
-            purple: "#7e5bef",
-            pink: "#ff49db",
-            orange: "#ff7849",
-            green: "#13ce66",
-            yellow: "#ffc82c",
-            "gray-dark": "#273444",
-            gray: "#8492a6",
-            "gray-light": "#d3dce6",
-            primary: '#5c6ac4',
-            secondary: '#ecc94b',
-          },
-          fontFamily: {
-            sans: ["Graphik", "sans-serif"],
-            serif: ["Merriweather", "serif"],
-          },
-          extend: {
-            spacing: {
-              "8xl": "96rem",
-              "9xl": "128rem",
-            },
-            borderRadius: {
-              "4xl": "2rem",
-            },
-          },
-        },
-      };
-    </script>
-    <style>
-      #role {
-        background-color: red;
-        height: 100px;
-      }
-      .role {
-        background-color: blue;
-        height: 100px;
-      }
-      .block {
-        border: 1px solid black;
-      }
-      .block2 {
-        border: 1px solid red;
-        display: inline;
-        /* box-sizing: border-box; */
-      }
-      .box-sizing {
-        height: 200px;
-        width: 300px;
-        background-color: antiquewhite;
-      }
-      #person {
-        height: 100px;
-        background-color: bisque;
-      }
-      .person {
-        height: 100px;
-        background-color: red;
-      }
-      .box {
-        background-color: blue;
-        color: white;
-      }
-      .name {
-        background-color: red;
-        color: white;
-        border: 1px solid white;
-        outline: none;
-      }
-      .hyperlink {
-        background-color: antiquewhite;
-      }
-      .box1 {
-        width: 200px;
-        height: 100px;
-        border: 2px solid red;
-      }
-      .box2 {
-        width: 200px;
-        height: 100px;
-        padding: 50px;
-        border: 2px solid blue;
-      }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline bg-primary">Hello world!</h1>
-    
-    1. Wireframe
-    2. PSD
-    3. Figma
-    4. HTML/CSS Advance -> Thẻ HTML nâng cao, Responsive
-    5. Javascript Cơ bản -> Ứng dụng được
-    6. Viết một ứng dụng hoàn chỉnh HTML/CSS Js cơ bản <- Chuẩn đầu ra
-
-    Case1
-    LAB 1 Hoàn thành -> LAB 2
-    LAB 3 Hoàn thành -> Assignment 1
-    LAB 4 Hoàn thành -> Assignment 2
-
-    Case2
-    LAB 1 Hoàn thành
-    LAB 2 Hoàn thành -> Assigment 1
-    LAB 3 Hoàn thành -> Assigment 2
-    LAB 4 Thi thử
-
-    1. Có bao cách để apply css vào HTML file:
-    2. Thẻ Body (body tag) trong HTML file
-    3. HTML Attribute là gì?
-    4. Thẻ nào lấy được thông tin attribute "value"
-    5. Hyperlink trong HTML là gì ?
-    6. Sự khác biệt giữa ID và class
-    7. CSS box-model?
-    <input class="user-name" type="text">
-    <a class="hyperlink" href="www.google.com">Google</a>
-    8. block và inline là gì, khác biệt như thế nào ?
-    9. box-sizing: border-box;
-    <div class="box1">
-      This is box 1
+    <div class="">
+      <div class="">
+        <div class="">
+          <img class="" src="./images/logo.png" alt="" />
+        </div>
+      </div>
+      <div class="">
+        <div class="">
+          <ul class="">
+            <li>
+              <a class="" href="#">Home</a>
+            </li>
+            <li>
+              <a class="" href="#">Pages</a>
+            </li>
+            <li>
+              <a class="" href="#">Courses</a>
+            </li>
+            <li>
+              <a class="" href="#">Services</a>
+            </li>
+            <li>
+              <a class="" href="#">About us</a>
+            </li>
+          </ul>
+          <div class="">
+            <form action="">
+              <input type="text" placeholder="courses" />
+              <button>Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <img class="" src="./images/banner.png" alt="" />
+      </div>
     </div>
-    <div class="box2">
-      This is box 2
-    </div>
-    
+    <div class="content"></div>
+    <div class="footer"></div>
   </body>
 </html>
