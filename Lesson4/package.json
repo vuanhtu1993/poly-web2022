@@ -1,0 +1,16 @@
+{
+  "name": "lesson4",
+  "version": "1.0.0",
+  "description": "### 1. Install Tailwind CSS ```json npm install -D tailwindcss yarn add tailwindcss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "tailwind build -i src/tailwind.css -o dist/output.css",
+    "tailwind:watch": "npx tailwindcss -i src/tailwind.css -o dist/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
