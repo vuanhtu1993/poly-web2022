@@ -502,16 +502,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.fixed {
-  position: fixed;
+.visible {
+  visibility: visible;
 }
 
-.top-0 {
-  top: 0px;
+.invisible {
+  visibility: hidden;
 }
 
-.left-0 {
-  left: 0px;
+.z-10 {
+  z-index: 10;
+}
+
+.m-8 {
+  margin: 2rem;
 }
 
 .mx-auto {
@@ -532,12 +536,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .h-8 {
   height: 2rem;
+}
+
+.h-custom {
+  height: 620px;
 }
 
 .h-6 {
@@ -548,37 +552,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 8rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-8 {
   width: 2rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-6 {
   width: 1.5rem;
 }
 
-.flex-col {
-  flex-direction: column;
-}
-
 .items-center {
   align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
 }
 
 .justify-between {
   justify-content: space-between;
 }
 
-.bg-gray-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .px-4 {
@@ -591,32 +590,62 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
-.opacity-90 {
+.menu-link {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.menu-link:hover {
+  --tw-text-opacity: 1;
+  color: rgb(246 191 159 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .menu-link {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
   opacity: 0.9;
 }
 
 @media (min-width: 768px) {
-  .md\:static {
+  .menu {
     position: static;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
   }
 
-  .md\:h-auto {
-    height: auto;
+  .md\:invisible {
+    visibility: hidden;
+  }
+
+  .md\:m-0 {
+    margin: 0px;
   }
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:flex-row {
-    flex-direction: row;
-  }
-
-  .md\:justify-between {
-    justify-content: space-between;
-  }
-
-  .md\:bg-transparent {
-    background-color: transparent;
   }
 }
