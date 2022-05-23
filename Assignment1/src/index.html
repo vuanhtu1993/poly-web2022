@@ -7,30 +7,27 @@
 </head>
 <body>
   <!-- HEADER -->
-  <div class="container mx-auto flex justify-between">
-      <div>
-          <img class="w-12 md:w-24" src="./images/logo.png" alt="">
-      </div>
-      <ul id="menu" class="
-        hidden
-        fixed top-0 left-0 
-        h-screen w-full flex flex-col
-        justify-center items-center
-        bg-green-500
-        md:relative md:flex-row md:bg-transparent
-        md:h-auto md:justify-end md:flex
-       ">
-        <li><a class="block p-4 text-white md:text-black" href="">HOME</a></li>
-        <li><a class="block p-4 text-white md:text-black" href="">ABOUT</a></li>
-        <li><a class="block p-4 text-white md:text-black" href="">PORTFOLIO</a></li>
-        <li><a class="block p-4 text-white md:text-black" href="">CONTACT</a></li>
-        <button class="block p-4 text-white md:text-black">CV</button>
+  <div class="container mx-auto flex justify-between items-center px-8 md:px-0">
+    <img class="w-12 md:w-28" src="./images/logo.png" alt="">
+    <ul id="menu" class="
+    hidden
+    fixed top-0 left-0 w-full h-screen 
+    bg-green-500 flex flex-col 
+    justify-center items-center
+    md:relative md:h-auto md:bg-transparent
+    md:flex md:flex-row md:space-x-4 md:justify-end
+    ">
+      <li><a class="block p-3 text-white md:text-black hover:text-red-400" href="#">HOME</a></li>
+      <li><a class="block p-3 text-white md:text-black hover:text-red-400" href="#">ABOUT</a></li>
+      <li><a class="block p-3 text-white md:text-black hover:text-red-400" href="#">CONTACT</a></li>
+      <li><a class="block p-3 text-white md:text-black hover:text-red-400" href="#">PORTFOLIO</a></li>
+      <li><button class="px-12 py-2 bg-gray-700 text-white rounded-l-3xl rounded-r-3xl">CV</button></li>
     </ul>
-      <div class="z-10 md:hidden" id="menu-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-      </div>
+    <div class="z-10 md:hidden" id="menu-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </div>
   </div>
   <script src="./app.js"></script>
 </body>
