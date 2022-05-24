@@ -3,23 +3,22 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: RedHatDisplay;
-    src: url("./fonts/RedHatDisplay-Light.ttf");
+    font-family: 'RedHatDisplay', sans-serif;
+    src: url("./fonts/RedHatDisplay-Light.ttf") format('truetype');
     font-weight: 300;
 }
 
 .menu {
     @apply
-    fixed top-0 left-0 
-    h-screen w-full flex flex-col
+    hidden
+    fixed top-0 left-0 w-full h-screen 
+    bg-green-500 flex flex-col 
     justify-center items-center
-    bg-green-500
-    md:relative md:flex-row md:bg-transparent
-    md:h-auto md:justify-end md:flex
+    md:relative md:h-auto md:bg-transparent
+    md:flex md:flex-row md:space-x-4 md:justify-end
 }
 
 .menu-link {
     @apply
-    block p-4 text-white md:text-black 
-    hover:text-red-400
+    block p-3 text-white md:text-black hover:text-red-400
 }
