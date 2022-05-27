@@ -514,14 +514,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 0px;
 }
 
-.top-1\/2 {
-  top: 50%;
-}
-
-.left-1\/2 {
-  left: 50%;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -543,20 +535,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-6 {
-  height: 1.5rem;
-}
-
 .h-screen {
   height: 100vh;
 }
 
 .h-7 {
   height: 1.75rem;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .w-12 {
@@ -569,6 +553,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-7 {
   width: 1.75rem;
+}
+
+.w-72 {
+  width: 18rem;
 }
 
 .flex-col {
@@ -601,15 +589,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -620,15 +599,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @font-face {
-  font-family: 'RedHatDisplay', sans-serif;
+  font-family: "RedHatDisplay", sans-serif;
 
-  src: url("./fonts/RedHatDisplay-Light.ttf") format('truetype');
+  src: url("./fonts/RedHatDisplay-Light.ttf") format("truetype");
 
   font-weight: 300;
 }
@@ -638,7 +621,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
   left: 0px;
   display: flex;
-  display: none;
   height: 100vh;
   width: 100%;
   flex-direction: column;
@@ -655,22 +637,13 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: auto;
     flex-direction: row;
     justify-content: flex-end;
-  }
-
-  .menu > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(1rem * var(--tw-space-x-reverse));
-    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .menu {
     background-color: transparent;
   }
 }
 
 .menu-link {
   display: block;
-  padding: 0.75rem;
+  padding: 1rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -687,22 +660,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.hover\:text-red-400:hover {
-  --tw-text-opacity: 1;
-  color: rgb(248 113 113 / var(--tw-text-opacity));
+.slider {
+  position: absolute;
+  transition: opacity 1s ease;
 }
 
 @media (min-width: 768px) {
   .md\:relative {
     position: relative;
-  }
-
-  .md\:block {
-    display: block;
-  }
-
-  .md\:flex {
-    display: flex;
   }
 
   .md\:hidden {
@@ -727,10 +692,5 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:bg-transparent {
     background-color: transparent;
-  }
-
-  .md\:text-black {
-    --tw-text-opacity: 1;
-    color: rgb(0 0 0 / var(--tw-text-opacity));
   }
 }
