@@ -1,21 +1,17 @@
 import data from '../db.json' assert {type: 'json'}
 
 // console.log(data)
-
-const productElement = document.querySelector('#product')
-
+const listBookElement = document.querySelector('#list-book')
 let _content = ""
-
-data.forEach(function(item) {
+data.forEach(function(book) {
     _content = _content + /*html*/`
     <div>
-        <img src="https://picsum.photos/200/300" alt="">
-        <p>GIAO SIÊU TỐC 2H</p>
-        <p>${item.name}</p>
-        <p>Đã bán 1000+</p>
-        <p>${item.price}</p>
+        <img src='${book.images[0].base_url}' alt="Image">
+        <p>${book.name}</p>
+        <p>${book.rating_average}</p>
+        <p>${book.original_price}</p>
     </div>
     `
 })
 
-productElement.innerHTML = _content
+listBookElement.innerHTML = _content
