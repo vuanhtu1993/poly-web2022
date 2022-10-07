@@ -8,22 +8,46 @@
 </head>
 
 <body>
-  <div class="px-2 sm:px-0 container mx-auto">
+  <div class="sm:px-0 container mx-auto">
+    <!-- Menu for mobile -->
+    <div class="hidden absolute bg-white w-full h-full flex items-center justify-center sm:hidden" id="mobile-menu">
+      <button id="btn-mobile-menu">
+        <svg class="w-8 h-8 text-black absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>  
+      </button>    
+      <ul class="">
+        <li class="mb-4 text-center"><a class="text-black hover:text-red-600" href="">Mới nhất</a></li>
+        <li class="mb-4 text-center"><a class="text-black hover:text-red-600" href="">Góc nhìn</a></li>
+        <li class="mb-4 text-center"><a class="text-black hover:text-red-600" href="">Thời sự</a></li>
+        <li class="mb-4 text-center"><a class="text-black hover:text-red-600" href="">Thế thới</a></li>
+        <li class="mb-4 text-center"><a class="text-black hover:text-red-600" href="">Videos</a></li>
+        <li class="mb-4 text-center"><a class="text-black hover:text-red-600" href="">Podcast</a></li>
+        <li class="mb-4 text-center"><a class="text-black hover:text-red-600" href="">Kinh doanh</a></li>
+        <li class="mb-4 text-center"><a class="text-black hover:text-red-600" href="">Khoa học</a></li>
+      </ul>
+    </div>
     <div class="py-3 sm:mt-12 sm:mb-5 flex sm:block">
-      <svg class="sm:hidden w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+      <svg id="btn-menu" class="sm:hidden w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+        stroke-width="1.5" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-      </svg>      
-      <img class="mx-auto sm:mx-0" src="https://s1cdn.vnecdn.net/vnexpress/restruct/i/v654/v2_2019/pc/graphics/logo.svg" alt="">
-      <svg class="sm:hidden w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
-      </svg>      
+      </svg>
+      <img class="mx-auto sm:mx-0" src="https://s1cdn.vnecdn.net/vnexpress/restruct/i/v654/v2_2019/pc/graphics/logo.svg"
+        alt="">
+      <svg class="sm:hidden w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+      </svg>
     </div>
     <ul class="flex gap-4 py-4 overflow-x-auto">
       <li class="inline-block">
         <a href="#" class="hover:text-red-600">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-          </svg>          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+          </svg>
         </a>
       </li>
       <li><a class="whitespace-nowrap hover:text-red-600" href="">Mới nhất</a></li>
@@ -63,6 +87,7 @@
       <p>Tăng lãi suất lần này giống như cởi bỏ tâm lý, điều gì cần đến đã đến.</p>
     </div>
   </div>
+  <script src="./app.js"></script>
 </body>
 
 </html>
