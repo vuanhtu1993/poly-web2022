@@ -1,0 +1,38 @@
+[
+    {
+        "title": "FCalendar (new 2022)",
+        "content": "Uma aplicação Web realizada durante o Hackathon do programa de formação da",
+        "technologies": ["Node", "Express", "MySQL", "Ejs", "React", "Angular"],
+        "github": "https://github.com"
+    },
+    {
+        "title": "Github Searcher",
+        "content": "Uma aplicação Web realizada durante o Hackathon do programa de formação da",
+        "technologies": ["Node", "Express", "MySQL", "Ejs"],
+        "github": "https://github.com"
+    },
+    {
+        "title": "Sunnyside agency",
+        "content": "Uma aplicação Web realizada durante o Hackathon do programa de formação da",
+        "technologies": ["Node", "Express", "MySQL", "Ejs"],
+        "github": "https://github.com"
+    },
+    {
+        "title": "Portfólio V1",
+        "content": "Uma aplicação Web realizada durante o Hackathon do programa de formação da",
+        "technologies": ["Node", "Express", "MySQL", "Ejs"],
+        "github": "https://github.com"
+    },
+    {
+        "title": "Dtmoney",
+        "content": "Uma aplicação Web realizada durante o Hackathon do programa de formação da",
+        "technologies": ["Node", "Express", "MySQL", "Ejs"],
+        "github": "https://github.com"
+    },
+    {
+        "title": "Music Library",
+        "content": "Uma aplicação Web realizada durante o Hackathon do programa de formação da",
+        "technologies": ["Node", "Express", "MySQL", "Ejs"],
+        "github": "https://github.com"
+    }
+]
